@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/menuFragment">
+
+    <fragment
+        android:id="@+id/mainScreenFragment"
+        tools:layout="@layout/fragment_main_menu"
+        android:name="com.fg.alias.dialects.game.GameScreenFragment"
+        android:label="MainScreenFragment" >
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        tools:layout="@layout/fragment_menu"
+        android:name="com.fg.alias.dialects.menu.MenuFragment"
+        android:label="MenuFragment" >
+        <action
+            android:id="@+id/action_menuFragment_to_selectPackageFragment"
+            app:destination="@id/selectPackageFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_rulesPackageFragment"
+            app:destination="@id/rulesPackageFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_moreFragment"
+            app:destination="@id/moreFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectPackageFragment"
+        android:name="com.fg.alias.dialects.select_package.SelectPackageFragment"
+        tools:layout="@layout/fragment_select_package"
+        android:label="SelectPackageFragment" >
+        <action
+            android:id="@+id/action_selectPackageFragment_to_mainScreenFragment"
+            app:destination="@id/mainScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rulesPackageFragment"
+        tools:layout="@layout/fragment_rules"
+        android:name="com.fg.alias.dialects.menu.RulesPackageFragment"
+        android:label="RulesPackageFragment" />
+    <fragment
+        android:id="@+id/moreFragment"
+        tools:layout="@layout/fragment_more"
+        android:name="com.fg.alias.dialects.menu.MoreFragment"
+        android:label="MoreFragment" />
+
+</navigation>

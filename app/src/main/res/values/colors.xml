@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="color_accent">#ff466f</color>
+    <color name="color_primary">#ffa575</color>
+    <color name="color_passive">#6b5d61</color>
+    <color name="color_letter_bg">#a37b95</color>
+    <color name="color_progress_bar_bg">#d64760</color>
+    <color name="color_progress_bar_main">#ff6a75</color>
+    <color name="color_button_bg">#ea5467</color>
+</resources>

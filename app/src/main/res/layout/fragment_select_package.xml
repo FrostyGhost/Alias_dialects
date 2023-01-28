@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/ic_bg">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvVocabularyTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:text="Словник" />
+
+            <TextView
+                android:id="@+id/tvVocabularyName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_marginHorizontal="16dp"
+                android:text="Оберіть словник" />
+
+            <View
+                android:layout_marginVertical="4dp"
+                android:background="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <TextView
+                android:id="@+id/tvSettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:text="Налаштування" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_marginHorizontal="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvRoundTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Довжина раунду"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="@+id/tvWordsCount"
+                    app:layout_constraintTop_toBottomOf="@+id/tvWordsMinus" />
+
+                <TextView
+                    android:id="@+id/tvWordsCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Оберіть к-ть слів, \nяку необхідно відгадати"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvWordsPlus"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="8dp"
+                    android:text="+10 слів"
+                    android:gravity="center"
+                    app:layout_constraintEnd_toEndOf="@+id/tvTimePlus"
+                    app:layout_constraintStart_toStartOf="@+id/tvTimePlus"
+                    app:layout_constraintTop_toTopOf="@+id/tvWordsMinus" />
+
+                <TextView
+                    android:id="@+id/tvWordsMinus"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/white"
+                    android:padding="8dp"
+                    android:text="-10 слів"
+                    android:gravity="center"
+                    app:layout_constraintEnd_toEndOf="@+id/tvTimeMinus"
+                    app:layout_constraintStart_toStartOf="@+id/tvWordsCount"
+                    app:layout_constraintTop_toBottomOf="@+id/tvWordsCount" />
+
+                <TextView
+                    android:id="@+id/tvTimePlus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:background="@color/white"
+                    android:text="+10 секунд"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    app:layout_constraintStart_toEndOf="@+id/tvTimeMinus"
+                    app:layout_constraintTop_toTopOf="@+id/tvTimeMinus" />
+
+                <TextView
+                    android:id="@+id/tvTimeMinus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/white"
+                    android:text="-10 секунд "
+                    android:padding="8dp"
+                    app:layout_constraintStart_toStartOf="@+id/tvRoundTime"
+                    app:layout_constraintTop_toBottomOf="@+id/tvRoundTime" />
+
+                <TextView
+                    android:id="@+id/tvWordsTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="24dp"
+                    android:gravity="center"
+                    android:text="100"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvWordsMinus"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tvWordsMinus" />
+
+                <TextView
+                    android:id="@+id/tvTimeTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="24dp"
+                    android:gravity="center"
+                    android:text="01:00"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tvTimeMinus" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:layout_marginVertical="4dp"
+                android:background="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <TextView
+                android:id="@+id/tvTeams"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:text="Команди" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:itemCount="2"
+                android:layout_marginHorizontal="16dp"
+                tools:listitem="@layout/item_team"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/tvAddTeam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginHorizontal="16dp"
+                android:text="Додати команду" />
+
+            <View
+                android:layout_marginVertical="4dp"
+                android:background="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <TextView
+                android:id="@+id/tvOptional"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:text="Додатково" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/scLastWordTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:text="Додаткова хвилина на останнє слово"
+                android:checked="true"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvStart"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/ic_bg"
+                android:gravity="center"
+                android:padding="8dp"
+                android:layout_marginVertical="8dp"
+                android:text="Розпочати Гру"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
