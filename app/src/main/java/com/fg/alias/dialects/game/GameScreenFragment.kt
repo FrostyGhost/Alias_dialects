@@ -237,6 +237,7 @@ class GameScreenFragment : Fragment(R.layout.fragment_main_menu){
         swipedCard = 0
         isFirstSwipe = true
         tvScore.text = score.toString()
+        tvScore.text = score.toString()
         adapter.setWordList(viewModel?.getWordsList()?: ArrayList())
     }
 
