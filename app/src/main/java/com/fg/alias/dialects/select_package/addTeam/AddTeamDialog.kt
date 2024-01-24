@@ -35,7 +35,7 @@ class AddTeamDialog(
         val namesList = ArrayList<String>()
         namesList.addAll(resources.getStringArray(R.array.teams_name))
         namesList.removeAll(usedNames.toSet())
-        adapter = TeamsAdapter(namesList, object : OnTeamSelected {
+        adapter = TeamsAdapter(namesList, false, object : OnTeamSelected {
             override fun onNewTeamAdded(name: String) {
                 listener.onNewTeamAdded(name)
                 dismiss()

@@ -7,8 +7,12 @@ import android.view.ViewGroup
 import android.view.WindowManager
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.DialogFragment
+import com.fg.alias.dialects.utils.FirebaseLogs
 import com.fg.alias.dialects.utils.Vocabulary
 import com.fg.alias.dialects.utils.getAllVocabularies
+import com.google.firebase.analytics.FirebaseAnalytics
+import com.google.firebase.analytics.ktx.analytics
+import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.dialog_choose_vocabulary.*
 
 class ChooseVocabularyDialog(
@@ -30,6 +34,16 @@ class ChooseVocabularyDialog(
     private val selectedVocabularyList = ArrayList<Vocabulary>()
 
     private fun updateSelectedVocabulary(vocabulary: Vocabulary) {
+
+        val firebaseAnalytics = Firebase.analytics
+        val bundle = Bundle()
+        bundle.putString("fasdf", "fasd")
+        firebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_ITEM, bundle)
+
+        FirebaseLogs.customEvent("customLogs", "selected = ${vocabulary.localise}")
+
+        FirebaseLogs.customEvent(FirebaseAnalytics.Event.SELECT_ITEM, "selected = ${vocabulary.localise}")
+
         if (vocabulary == Vocabulary.ALL){
             selectedVocabularyList.clear()
             selectedVocabularyList.add(vocabulary)

@@ -10,7 +10,9 @@ import com.fg.alias.R
 
 class TeamsAdapter(
     private val names: ArrayList<String>,
-    private val listener: AddTeamDialog.OnTeamSelected? = null) : RecyclerView
+    private val isRemoveIconVisible: Boolean = true,
+    private val listener: AddTeamDialog.OnTeamSelected? = null
+) : RecyclerView
 .Adapter<TeamsAdapter.TeamViewHolder>() {
 
     class TeamViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -26,9 +28,13 @@ class TeamsAdapter(
     @SuppressLint("NotifyDataSetChanged")
     override fun onBindViewHolder(holder: TeamViewHolder, position: Int) {
         holder.tvTeamName.text = names[position]
-        holder.tvClose.setOnClickListener {
-            names.removeAt(position)
-            notifyDataSetChanged()
+        if (isRemoveIconVisible){
+            holder.tvClose.setOnClickListener {
+                names.removeAt(position)
+                notifyDataSetChanged()
+            }
+        }else{
+            holder.tvClose.visibility = View.GONE
         }
         holder.itemView.setOnClickListener { listener?.onNewTeamAdded(names[position]) }
     }

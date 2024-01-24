@@ -9,9 +9,10 @@ import android.widget.Toast
 import com.fg.alias.R
 import com.google.gson.Gson
 
-fun generateJson(resources: Resources, context: Context){
+fun generateJson(arrayString: Array<String>, context: Context, region: String){
     val wordsList = ArrayList<Word>()
-    val wordTitleArray = resources.getStringArray(R.array.zac).toMutableList()
+//    val wordTitleArray = resources.getStringArray(R.array.pod).toMutableList()
+    val wordTitleArray = arrayString.toMutableList()
 
     val word1 = ArrayList<String>()
     val word2 = ArrayList<String>()
@@ -27,7 +28,7 @@ fun generateJson(resources: Resources, context: Context){
     }
 
     word2.forEachIndexed { index, element ->
-        wordsList.add(Word(word1[index], element, "Закарпатський говір"))
+        wordsList.add(Word(word1[index], element, region))
     }
 
     val gson = Gson().toJson(wordsList)

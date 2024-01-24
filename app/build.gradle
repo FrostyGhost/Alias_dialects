@@ -3,6 +3,8 @@ plugins {
     id 'kotlin-android'
     id 'kotlin-android-extensions'
     id 'kotlin-kapt'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
 }
 
 android {
@@ -42,7 +44,7 @@ android {
 dependencies {
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    implementation 'androidx.core:core-ktx:1.2.0'
+    implementation 'androidx.core:core-ktx:1.5.0'
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.google.android.material:material:1.2.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.2'
@@ -60,6 +62,19 @@ dependencies {
 
 
     implementation 'com.google.code.gson:gson:2.8.5'
-    implementation 'com.fasterxml.jackson.module:jackson-module-kotlin:2.8.+'
+    implementation 'com.fasterxml.jackson.module:jackson-module-kotlin:2.14.2'
     implementation 'nl.dionsegijn:konfetti-xml:2.0.2'
+
+    //firebase
+    implementation platform('com.google.firebase:firebase-bom:31.2.2')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-crashlytics-ktx'
+    implementation("com.google.firebase:firebase-config")
+
+
+    //admob
+    implementation 'com.google.android.gms:play-services-ads:21.5.0'
+
+    implementation 'com.github.orbitalsonic:SonicCountDownTimer:1.0.4'
+
 }

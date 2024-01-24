@@ -8,58 +8,87 @@
     android:focusableInTouchMode="true"
     android:background="@drawable/ic_bg">
 
+    <TextView
+        android:id="@+id/tvStart"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/start_game_btn"
+        android:textSize="20sp"
+        android:fontFamily="@font/roboto_regular"
+        android:textColor="@color/regular_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:id="@+id/container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/tvVocabularyTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="8dp"
-                android:text="Словник" />
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/title_text"
+                android:text="@string/vocabulary_title" />
 
             <TextView
                 android:id="@+id/tvVocabularyName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:maxLines="1"
-                android:ellipsize="end"
                 android:layout_marginHorizontal="16dp"
-                android:text="Оберіть словник" />
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/regular_text"
+                android:text="@string/choose_vocabulary"
+                android:textSize="20sp" />
 
             <View
-                android:layout_marginVertical="4dp"
-                android:background="@color/black"
                 android:layout_width="match_parent"
-                android:layout_height="1dp"/>
+                android:layout_height="1dp"
+                android:layout_marginVertical="4dp"
+                android:background="@color/black" />
 
             <TextView
                 android:id="@+id/tvSettings"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="8dp"
-                android:text="Налаштування" />
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/title_text"
+                android:text="@string/settings" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_marginHorizontal="8dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp">
 
                 <TextView
                     android:id="@+id/tvRoundTime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:text="Довжина раунду"
+                    android:text="@string/raund_durtion_title"
                     android:textSize="20sp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/regular_text"
                     app:layout_constraintStart_toStartOf="@+id/tvWordsCount"
                     app:layout_constraintTop_toBottomOf="@+id/tvWordsMinus" />
 
@@ -68,8 +97,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
-                    android:text="Оберіть к-ть слів, \nяку необхідно відгадати"
+                    android:text="@string/choose_words_count_title"
                     android:textSize="20sp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/regular_text"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -78,9 +109,11 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:background="@color/white"
-                    android:padding="8dp"
-                    android:text="+10 слів"
                     android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/plus_ten_words"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/regular_text"
                     app:layout_constraintEnd_toEndOf="@+id/tvTimePlus"
                     app:layout_constraintStart_toStartOf="@+id/tvTimePlus"
                     app:layout_constraintTop_toTopOf="@+id/tvWordsMinus" />
@@ -91,9 +124,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:background="@color/white"
-                    android:padding="8dp"
-                    android:text="-10 слів"
                     android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/minus_ten_words"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/regular_text"
                     app:layout_constraintEnd_toEndOf="@+id/tvTimeMinus"
                     app:layout_constraintStart_toStartOf="@+id/tvWordsCount"
                     app:layout_constraintTop_toBottomOf="@+id/tvWordsCount" />
@@ -104,9 +139,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:background="@color/white"
-                    android:text="+10 секунд"
-                    android:padding="8dp"
                     android:gravity="center"
+                    android:padding="8dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/regular_text"
+                    android:text="@string/plus_ten_second"
                     app:layout_constraintStart_toEndOf="@+id/tvTimeMinus"
                     app:layout_constraintTop_toTopOf="@+id/tvTimeMinus" />
 
@@ -116,8 +153,10 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:background="@color/white"
-                    android:text="-10 секунд "
                     android:padding="8dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/regular_text"
+                    android:text="@string/minus_ten_word"
                     app:layout_constraintStart_toStartOf="@+id/tvRoundTime"
                     app:layout_constraintTop_toBottomOf="@+id/tvRoundTime" />
 
@@ -129,6 +168,8 @@
                     android:gravity="center"
                     android:text="100"
                     android:textSize="24sp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/regular_text"
                     app:layout_constraintBottom_toBottomOf="@+id/tvWordsMinus"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/tvWordsMinus" />
@@ -141,73 +182,74 @@
                     android:gravity="center"
                     android:text="01:00"
                     android:textSize="24sp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/regular_text"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/tvTimeMinus" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <View
-                android:layout_marginVertical="4dp"
-                android:background="@color/black"
                 android:layout_width="match_parent"
-                android:layout_height="1dp"/>
+                android:layout_height="1dp"
+                android:layout_marginVertical="4dp"
+                android:background="@color/black" />
 
             <TextView
                 android:id="@+id/tvTeams"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="8dp"
-                android:text="Команди" />
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/title_text"
+                android:text="@string/teams_title" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="16dp"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 tools:itemCount="2"
-                android:layout_marginHorizontal="16dp"
-                tools:listitem="@layout/item_team"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                tools:listitem="@layout/item_team" />
 
             <TextView
                 android:id="@+id/tvAddTeam"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
                 android:layout_marginHorizontal="16dp"
-                android:text="Додати команду" />
+                android:text="@string/add_team_btn"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/regular_text"
+                android:textSize="20sp" />
 
             <View
-                android:layout_marginVertical="4dp"
-                android:background="@color/black"
                 android:layout_width="match_parent"
-                android:layout_height="1dp"/>
+                android:layout_height="1dp"
+                android:layout_marginVertical="4dp"
+                android:background="@color/black" />
 
             <TextView
                 android:id="@+id/tvOptional"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="8dp"
-                android:text="Додатково" />
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/title_text"
+                android:text="@string/extra" />
 
             <androidx.appcompat.widget.SwitchCompat
                 android:id="@+id/scLastWordTime"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"
-                android:text="Додаткова хвилина на останнє слово"
                 android:checked="true"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/regular_text"
+                android:text="@string/additional_minute"
                 android:textSize="20sp" />
 
-            <TextView
-                android:id="@+id/tvStart"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:background="@drawable/ic_bg"
-                android:gravity="center"
-                android:padding="8dp"
-                android:layout_marginVertical="8dp"
-                android:text="Розпочати Гру"
-                android:textSize="20sp" />
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

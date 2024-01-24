@@ -27,6 +27,8 @@
         android:textStyle="bold"
         android:ellipsize="end"
         android:maxLines="1"
+        android:fontFamily="@font/roboto_regular"
+        android:textColor="@color/regular_text"
         app:layout_constraintBottom_toBottomOf="@+id/imgIcon"
         app:layout_constraintEnd_toStartOf="@+id/tvScore"
         app:layout_constraintStart_toEndOf="@+id/imgIcon"
@@ -39,6 +41,8 @@
         android:padding="8dp"
         tools:text="100"
         android:textSize="20sp"
+        android:fontFamily="@font/roboto_regular"
+        android:textColor="@color/regular_text"
         app:layout_constraintBottom_toBottomOf="@+id/imgIcon"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imgIcon" />

@@ -12,19 +12,23 @@ enum class Vocabulary(val localise: String) {
     ALL("Всі"),
     GAL("Галицький"),
     ZAC("Закарпатський"),
+    POD("Подільський говір"),
+    ODESA("Одеські говірки"),
     LVIV("Львівська ґвара")
 }
 
 enum class VocabularyAssetFile(val localise: String) {
     GAL("galishina_json.txt"),
     ZAC("zakarpatia_json.txt"),
-    LVIV("lviv_json.txt")
+    LVIV("lviv_json.txt"),
+    POD("podilskiy_json.txt"),
+    ODESA("odeski_json.txt")
 }
 
 fun getVocabularyCount(voc: Vocabulary): String {
     return when(voc){
         Vocabulary.ALL -> {
-            "1800"
+            "2097"
         }
         Vocabulary.GAL -> {
             "260"
@@ -34,6 +38,12 @@ fun getVocabularyCount(voc: Vocabulary): String {
         }
         Vocabulary.ZAC -> {
             "530"
+        }
+        Vocabulary.POD ->{
+            "118"
+        }
+        Vocabulary.ODESA ->{
+            "179"
         }
         else -> {""}
     }
@@ -45,6 +55,8 @@ fun getAllVocabularies(): ArrayList<Vocabulary> {
     vocabularyList.add(Vocabulary.GAL)
     vocabularyList.add(Vocabulary.LVIV)
     vocabularyList.add(Vocabulary.ZAC)
+    vocabularyList.add(Vocabulary.POD)
+    vocabularyList.add(Vocabulary.ODESA)
     return vocabularyList
 }
 
@@ -73,6 +85,12 @@ private fun getWordsListByVocabulary(voc: Vocabulary, context: Context): List<Wo
         Vocabulary.ZAC ->{
             return getWordArrayFromAssets(context, VocabularyAssetFile.ZAC.localise)
         }
+        Vocabulary.POD ->{
+            return getWordArrayFromAssets(context, VocabularyAssetFile.POD.localise)
+        }
+        Vocabulary.ODESA ->{
+            return getWordArrayFromAssets(context, VocabularyAssetFile.ODESA.localise)
+        }
         else -> {
             return getAllWordArray(context)
         }
@@ -84,6 +102,8 @@ fun getAllWordArray(context: Context): ArrayList<Word> {
     allArray.addAll(getWordArrayFromAssets(context, VocabularyAssetFile.GAL.localise))
     allArray.addAll(getWordArrayFromAssets(context, VocabularyAssetFile.LVIV.localise))
     allArray.addAll(getWordArrayFromAssets(context, VocabularyAssetFile.ZAC.localise))
+    allArray.addAll(getWordArrayFromAssets(context, VocabularyAssetFile.POD.localise))
+    allArray.addAll(getWordArrayFromAssets(context, VocabularyAssetFile.ODESA.localise))
     return allArray
 }
 

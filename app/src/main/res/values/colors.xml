@@ -10,4 +10,7 @@
     <color name="color_progress_bar_bg">#d64760</color>
     <color name="color_progress_bar_main">#ff6a75</color>
     <color name="color_button_bg">#ea5467</color>
+
+    <color name="title_text">#302C2C</color>
+    <color name="regular_text">#403C3C</color>
 </resources>

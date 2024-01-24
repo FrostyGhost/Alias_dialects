@@ -25,6 +25,8 @@
         android:text="Гусятка"
         android:textSize="20sp"
         android:textStyle="bold"
+        android:fontFamily="@font/roboto_regular"
+        android:textColor="@color/regular_text"
         app:layout_constraintBottom_toBottomOf="@+id/imgIcon"
         app:layout_constraintEnd_toStartOf="@+id/tvClose"
         app:layout_constraintStart_toEndOf="@+id/imgIcon"
@@ -34,12 +36,16 @@
         android:id="@+id/tvClose"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_regular"
         android:padding="8dp"
         android:text="X"
+        android:textColor="@color/regular_text"
         android:textSize="20sp"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="@+id/imgIcon"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imgIcon" />
+        app:layout_constraintTop_toTopOf="@+id/imgIcon"
+        tools:visibility="visible" />
 
     <View
         android:layout_width="match_parent"

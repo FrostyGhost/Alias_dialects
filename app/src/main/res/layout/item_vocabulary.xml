@@ -27,6 +27,8 @@
         android:text="Галицький"
         android:textSize="18sp"
         android:textStyle="bold"
+        android:fontFamily="@font/roboto_bold"
+        android:textColor="@color/title_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imgIcon"
         app:layout_constraintTop_toTopOf="parent" />
@@ -40,6 +42,8 @@
         android:text="000"
         android:textSize="20sp"
         android:gravity="center"
+        android:fontFamily="@font/roboto_regular"
+        android:textColor="@color/regular_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/tvRegionName"
         app:layout_constraintTop_toBottomOf="@+id/tvRegionName" />

@@ -12,6 +12,7 @@ import com.fg.alias.dialects.select_package.addTeam.AddTeamDialog
 import com.fg.alias.dialects.select_package.addTeam.TeamsAdapter
 import com.fg.alias.dialects.select_package.chooseVocabulary.ChooseVocabularyDialog
 import com.fg.alias.dialects.utils.*
+import com.google.firebase.analytics.FirebaseAnalytics
 import kotlinx.android.synthetic.main.fragment_select_package.*
 import kotlin.random.Random
 
@@ -42,7 +43,7 @@ class SelectPackageFragment : Fragment(R.layout.fragment_select_package){
         nameArray.remove(firstTeamName)
         namesArrayList.add(nameArray[Random.nextInt(0,nameArray.size-1)])
 
-        adapter = TeamsAdapter(namesArrayList)
+        adapter = TeamsAdapter(namesArrayList, true)
         recyclerView.adapter = adapter
     }
 
@@ -75,10 +76,14 @@ class SelectPackageFragment : Fragment(R.layout.fragment_select_package){
             viewModel.setTeams(adapter.getTeamsList())
         }else{
             Toast.makeText(requireContext(),
-                "для гри вам потрібно, як мінімум 2 команди",
+                "для гри вам потрібно мінімум дві команди",
                 Toast.LENGTH_SHORT).show()
             return
         }
+        println("QQ start game ${adapter.getTeamsList()} \n ${tvVocabularyName.text}")
+        FirebaseLogs.customEvent(FirebaseAnalytics.Event.LEVEL_START, "" +
+                "${adapter.getTeamsList()} \n" +
+                " ${tvVocabularyName.text} ")
         findNavController().popBackStack(R.id.menuFragment, false);
         findNavController().navigate(R.id.mainScreenFragment)
     }

@@ -29,6 +29,7 @@
         android:layout_marginTop="8dp"
         android:text="Рахунок"
         android:textColor="@color/white"
+        android:fontFamily="@font/roboto_regular"
         app:layout_constraintStart_toStartOf="@+id/tvTeamName"
         app:layout_constraintTop_toBottomOf="@+id/tvTeamName" />
 
@@ -41,6 +42,7 @@
         android:text="TextView"
         android:textColor="@color/white"
         android:textSize="18sp"
+        android:fontFamily="@font/roboto_regular"
         app:layout_constraintBottom_toBottomOf="@+id/tvScoreTitle"
         app:layout_constraintStart_toEndOf="@+id/tvScoreTitle" />
 
@@ -49,8 +51,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
-        android:text="TextView"
+        tools:text="Timer: 0:00"
         android:textColor="@color/white"
+        android:fontFamily="@font/roboto_regular"
         app:layout_constraintBottom_toBottomOf="@+id/tvTeamName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/tvTeamName" />
@@ -63,6 +66,7 @@
         android:layout_marginTop="8dp"
         android:textColor="@color/white"
         android:textSize="20sp"
+        android:fontFamily="@font/roboto_regular"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="TextView" />

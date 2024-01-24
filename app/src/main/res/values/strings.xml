@@ -11,7 +11,44 @@
     <string name="invite_sample_invite_code">SOMEINVITECODEHERE</string>
     <string name="invite_create_game">Create lvl</string>
     <string name="start_game_choose_nickname">Enter the nickname</string>
+    <string name="choose_vocabulary">Оберіть словник</string>
+    <string name="vocabulary_title">Словник</string>
+    <string name="start_game_btn">Розпочати Гру</string>
+    <string name="settings">Налаштування</string>
+    <string name="raund_durtion_title">Довжина раунду</string>
+    <string name="choose_words_count_title">Оберіть к-ть слів, \nяку необхідно відгадати</string>
+    <string name="plus_ten_words">+10 слів</string>
+    <string name="minus_ten_words">-10 слів</string>
+    <string name="plus_ten_second">+10 секунд</string>
+    <string name="minus_ten_word">-10 секунд</string>
+    <string name="teams_title">Команди</string>
+    <string name="add_team_btn">Додати команду</string>
+    <string name="extra">Додатково</string>
+    <string name="additional_minute">Додаткова хвилина на останнє слово</string>
+    <string name="new_game">Нова гра</string>
+    <string name="rules">Правила</string>
 
+    <!-- ad mob -->
+    <string name="app_id">ca-app-pub-3940256099942544~3347511713</string>
+
+    <string name="rules_help">Привіт! \nГра "Alias Dialects" - це словесна гра, в якій гравці намагаються пояснити слова своїм товаришам,
+        називаючи діалектизм та даючи підказки, щоб допомогти вгадати літературний або загальнопоширений аналог названого слова.
+        \n\nГра складається з кількох раундів, і перемагає та команда, яка набирає найбільше очок.
+
+    \n\nОсновні правила гри "Alias":
+
+    \n\nСклад команд: Гравці розділяються на дві або більше команди. Кожний гравець в команді по черзі є ведучим які пояснюють слова своїй команді.
+
+    \n\nКартки зі словами: На початку кожного раунду ведучі отримують картки із словами, які вони повинні пояснювати. В даній версії гри ведучому перед почтком слід назвати верхнє слово, діалект після чого продовжити підказувати значення цього слова як в класичному alias
+
+    \n\nЧас: Кожен раунд має обмежений час, наприклад, 1-2 хвилини.
+
+    \n\nПояснення слова: Гравці ведуть обговорення своєю командою, намагаючись пояснити якнайбільше слів, пропускаючи при цьому самі слова або будь-які їх частини. Ведучі можуть використовувати будь-які слова, крім тих, які зазначені на картці (окрім самого діалектизму).
+
+    \n\nОчки: За кожне вірно вгадане слово команда отримує очко. За кожне слово, яке команда вирішить пропусити вона отримує мінус одне очко.
+
+    \n\nПриємної гри!
+</string>
     <string-array name="teams_name">
         <item>М\'які Гусятка</item>
         <item>Пишні Качєта</item>
@@ -21,537 +58,197 @@
         <item>Гострі Зубки</item>
     </string-array>
 
-    <string-array name="zac">
-        <item>    Агац </item> <item> акація</item>
-        <item>    Адамаш </item> <item> могорич</item>
-        <item>    Айбо </item> <item> але</item>
-        <item>    Айде </item> <item> та ну, та де там</item>
-        <item>    Айно, Ай </item> <item> і, та; так</item>
-        <item>    Акурат </item> <item> якраз, щойно</item>
-        <item>    Алдомаш </item> <item> могорич</item>
-        <item>    Антимолош </item> <item> чорт</item>
-        <item>    Анцук </item> <item> костюм</item>
-        <item>    Апо </item> <item> батько</item>
-        <item>    Бавити </item> <item> грати у гру (футбол)</item>
-        <item>    Багов </item> <item> листя тютюну</item>
-        <item>    Байка </item> <item> не біда</item>
-        <item>    Байно </item> <item> ага, звичайно</item>
-        <item>    Балта </item> <item> сокира</item>
-        <item>    Баляти </item> <item> збивати</item>
-        <item>    Бамбетлик </item> <item> диван твердий, з дерева</item>
-        <item>    Бановати </item> <item> побиватися, плакати за чимось</item>
-        <item>    Барацка </item> <item> абрикоса</item>
-        <item>    Бачі </item> <item> дядько</item>
-        <item>    Баюса </item> <item> вуса</item>
-        <item>    Берів </item> <item> голова села</item>
-        <item>    Бесаґи </item> <item> сумка через плече</item>
-        <item>    Бигарь </item> <item> палиця, прут</item>
-        <item>    Бизитися </item> <item>втікати</item>
-        <item>    Бизівний </item> <item> надійний</item>
-        <item>    Бизоватися </item> <item> бути впевненим</item>
-        <item>    Билиндіти </item> <item> говорити невпопад</item>
-        <item>    Биля </item> <item> бадилля,</item>
-        <item>    Биріг </item> <item> схил</item>
-        <item>    Бирувати </item> <item> могти</item>
-        <item>    Бичелювати </item> <item> поважати, цінувати</item>
-        <item>    Бігарь </item> <item> палиця, прут</item>
-        <item>    Біглязь </item> <item> праска</item>
-        <item>    Бідак </item> <item> бідний	</item>
-        <item>    Бідишний </item> <item> смердючий</item>
-        <item>    Бідовати </item> <item> бідно жити</item>
-        <item>    Бізівно </item> <item> так, так і є</item>
-        <item>    Бізонь </item> <item> справді, напевно</item>
-        <item>    Бійка </item> <item> бик, бугай</item>
-        <item>    Бінґош </item> <item> палиця</item>
-        <item>    Бірувати </item> <item> могти</item>
-        <item>    Біціглі </item> <item> велосипед</item>
-        <item>    Блиндатися </item> <item> тинятися</item>
-        <item>    Бляшка </item> <item> консервна банка</item>
-        <item>    Бовт </item> <item> крамниця</item>
-        <item>    Бога му! </item> <item> чорт візьми!</item>
-        <item>    Богар </item> <item> жук, комаха</item>
-        <item>    Богрийда </item> <item> бутоньєрка</item>
-        <item>    Боґанчі </item> <item> великі чоловічі туфлі</item>
-        <item>    Бокс </item> <item> крем для взуття</item>
-        <item>    Бомбони </item> <item> конфети</item>
-        <item>    Босорканя </item> <item> відьма</item>
-        <item>    Ботвиня </item> <item> зеленина</item>
-        <item>    Боцок </item> <item> лелека</item>
-        <item>    Бриндас </item> <item> майський жук</item>
-        <item>    Бровза </item> <item> сода</item>
-        <item>    Бровдарь </item> <item> духова шафа у печі</item>
-        <item>    Бряжчати </item> <item> дзвеніти</item>
-        <item>    Бугіледзи </item> <item> журавлина</item>
-        <item>    Будюгови </item> <item> жіночі довгі труси</item>
-        <item>    Будар </item> <item> туалет</item>
-        <item>    Бузьок </item> <item> лелека</item>
-        <item>    Бумбак </item> <item> хробак</item>
-        <item>    Бумбарішка </item> <item> сонечко (комаха)</item>
-        <item>    Бунда </item> <item> верхній одяг</item>
-        <item>    Бургови </item> <item> контрабас</item>
-        <item>    Бурки </item> <item> войлочні чоботи</item>
-        <item>    Буркут </item> <item> мінеральне джерело, мінеральна вода</item>
-        <item>    Бутнявий </item> <item> пліснявий</item>
-        <item>    Буцигарня </item> <item> тюрма</item>
-        <item>    Буяк </item> <item> бугай</item>
-        <item>    Вадаска </item> <item> полювання</item>
-        <item>    Вадитися </item> <item> сваритися</item>
-        <item>    Вал </item> <item> щойно скошена трава</item>
-        <item>    Валандатися </item> <item> тинятися без діла</item>
-        <item>    Валів </item> <item> спеціальне корито для свиней</item>
-        <item>    Валовшний </item> <item> здатний</item>
-        <item>    Валув </item> <item> ясла, спеціальне корито для напування худоби</item>
-        <item>    Валька </item> <item> саман, невипалена цеглина</item>
-        <item>    Ваприни </item> <item> агрус</item>
-        <item>    Варіха </item> <item> черпак</item>
-        <item>    Варош </item> <item> місто</item>
-        <item>    Варувати </item> <item> оберігати</item>
-        <item>    Варундатися </item> <item> повільно рухатися</item>
-        <item>    Вать, Вадь </item> <item> або, чи</item>
-        <item>    Вбалити </item> <item> звалити, збити (яблуко з яблуні, з ніг)</item>
-        <item>    Вепирь </item> <item> вепр</item>
-        <item>    Верещати </item> <item> кричати</item>
-        <item>    Вецце </item> <item> більше</item>
-        <item>    Вифляцкати </item> <item> ударити по обличчю</item>
-        <item>    Викіпніти </item> <item> з\'явитися зненацька</item>
-        <item>    Вильо </item> <item> багато</item>
-        <item>    Випозіровати </item> <item> видивлятися</item>
-        <item>    Вичурки </item> <item> вечорниці</item>
-        <item>    Віган </item> <item> плаття, сукня</item>
-        <item>    Відданиця </item> <item> дівчина</item>
-        <item>    Вілань </item> <item> ліхтар</item>
-        <item>    Віпера </item> <item> погана жінка</item>
-        <item>    Вітцізнина </item> <item> місце, де народилися</item>
-        <item>    Вічка </item> <item> очі</item>
-        <item>    Вішалник </item> <item> мала копичка сіна</item>
-        <item>    Вон </item> <item> на вулиці</item>
-        <item>    Вонка </item> <item> надвор</item>
-        <item>    Ворожіля </item> <item> ворожкаі</item>
-        <item>    Вракаши </item> <item> вкупі, разом</item>
-        <item>    Вшиток </item> <item> увесь</item>
-        <item>    Гадина </item> <item> гадюка</item>
-        <item>    Гад </item> <item> гадюки чоловік </item>
-        <item>    Гид </item> <item> гадюка в деяких селах на Свалявщині</item>
-        <item>    Гамселити </item> <item> бити</item>
-        <item>    Гарадичі </item> <item> сходи</item>
-        <item>    Ґаті </item> <item> підштаники, штани</item>
-        <item>    Гатижак </item> <item> рюкзак</item>
-        <item>    Гатікошар </item> <item> кошик який несуть на плечах як рюкзак</item>
-        <item>    Гачкованя </item> <item> в\'язання гачком</item>
-        <item>    Гачмаґи </item> <item> білі штани із домотканого полотна</item>
-        <item>    Ґелетка </item> <item> мала дерев\'яна бочка</item>
-        <item>    Генделик </item> <item> маленьке кафе</item>
-        <item>    Ґеренда </item> <item> сволок, кроква</item>
-        <item>    Гертик </item> <item> туберкульоз</item>
-        <item>    Гий </item> <item> так</item>
-        <item>    Гикати </item> <item> ікати</item>
-        <item>    Гиндати </item> <item> (образливе) говорити</item>
-        <item>    Гирчок </item> <item> ховрах</item>
-        <item>    Го </item> <item> його</item>
-        <item>    Ґовдош </item> <item> жебрак - каліка</item>
-        <item>    Гойкати </item> <item> кричати</item>
-        <item>    Гомбиця </item> <item> гудзик</item>
-        <item>    Гомбовці </item> <item> кнедлі</item>
-        <item>    Гонда </item> <item> вепр</item>
-        <item>    Гордув </item> <item> бочка, барило</item>
-        <item>    Горізнач </item> <item> горілиць</item>
-        <item>    Горня </item> <item> чашка</item>
-        <item>    Готава </item> <item> скошена конюшина або молода конюшина</item>
-        <item>    Горниць </item> <item> каструля</item>
-        <item>    Гребсти </item> <item> згрібати (сіно)</item>
-        <item>    Грибізлі </item> <item> червона смородина</item>
-        <item>    Гризачка </item> <item> кавун</item>
-        <item>    Гриміти </item> <item> гримати</item>
-        <item>    Гріс </item> <item> манна крупа</item>
-        <item>    Грявчати </item> <item> голосно скиглити, голосити</item>
-        <item>    Гудак </item> <item> музикант</item>
-        <item>    Гузиця </item> <item> задниця</item>
-        <item>    Ґумаки </item> <item> резинові чоботи</item>
-        <item>    Гуня </item> <item> верхній одяг із овечої шерсті</item>
-        <item>    Гурка </item> <item> ковбаса ліверна</item>
-        <item>    Гуслі </item> <item> скрипка</item>
-        <item>    Ґута би тя вбила </item> <item> прокльон</item>
-        <item>    Дако </item> <item> дехто</item>
-        <item>    Дараб </item> <item> шматок, кусень</item>
-        <item>    Даскильо </item> <item> декілька</item>
-        <item>    Двигати </item> <item> піднімати</item>
-        <item>    Декунок </item> <item> окоп</item>
-        <item>    Деська </item> <item> десь</item>
-        <item>    Дзяма </item> <item> бульон</item>
-        <item>    Дичка </item> <item> дика яблуня</item>
-        <item>    Ділі </item> <item> дощана підлога</item>
-        <item>    Дітвак </item> <item> дитина</item>
-        <item>    Довбня </item> <item> ковбиця</item>
-        <item>    Докус </item> <item> зовсім</item>
-        <item>    Домак </item> <item> повністю, зовсім</item>
-        <item>    Дохторь </item> <item> лікар</item>
-        <item>    Драпати </item> <item> втікати</item>
-        <item>    Дрибіцкати </item> <item> йти малими кроками</item>
-        <item>    Дриварня </item> <item> дровітня</item>
-        <item>    Дриляти, Друляти </item> <item> штовхати, пхати</item>
-        <item>    Дрисляк </item> <item> друшляг</item>
-        <item>    Дубівка, Дуговка </item> <item> корок, пробка, затичка</item>
-        <item>    Дунгов </item> <item> мопед</item>
-        <item>    Дуркати </item> <item> гупати, гримати</item>
-        <item>    Дурундати </item> <item> говорити під ніс невдоволено</item>
-        <item>    Дюгати </item> <item> штрикати, колоти, бодати</item>
-        <item>    Жалива </item> <item> кропива</item>
-        <item>    Жеб, Жебня </item> <item> кишеня</item>
-        <item>    Жебаловка </item> <item> носовик</item>
-        <item>    Жилавий </item> <item> міцний, сильний</item>
-        <item>    Жировати </item> <item> багато жити не по доходах</item>
-        <item>    Жіван </item> <item> розбійник, злодій, розбишака</item>
-        <item>    Жмикати </item> <item> прати</item>
-        <item>    Жмурькати </item> <item> моргати</item>
-        <item>    Жорна </item> <item> пристрій для виготовлення каші</item>
-        <item>    Жулик </item> <item> розбійник</item>
-        <item>    Жумарі </item> <item> підсмажене сало</item>
-        <item>    Загловок </item> <item> подушка</item>
-        <item>    Закапчати </item> <item> увімкнути</item>
-        <item>    Закапчовати </item> <item> застібати</item>
-        <item>    Закля </item> <item> доти, поки</item>
-        <item>    Заклястися </item> <item> щезнути</item>
-        <item>    Закосичити </item> <item> заквітчати</item>
-        <item>    Заушниці </item> <item> сережки</item>
-        <item>    Збан </item> <item> жбан</item>
-        <item>    Збризкати </item> <item> покропити</item>
-        <item>    Збитковати </item> <item> знущатися</item>
-        <item>    Збизоватися </item> <item> понадіятись</item>
-        <item>    Збіситися </item> <item> здуріти</item>
-        <item>    Зворохобити </item> <item> збурити, розтривожити</item>
-        <item>    Здушений </item> <item> впрілий, спітнілий</item>
-        <item>    Зухабити </item> <item> покинути, залишити, знищити</item>
-        <item>    Зясь </item> <item> знову</item>
-        <item>    Идомні, Ідомні </item> <item> до мене</item>
-        <item>    Изирь </item> <item> тисяча</item>
-        <item>    Изясь, йзясь </item> <item> знову</item>
-        <item>    Їмати </item> <item> ловити</item>
-        <item>    Їр\'я </item> <item> свято Юрія</item>
-        <item>    Йойкати </item> <item> плакати, ридати</item>
-        <item>    Кабацайка </item> <item> безрукавка</item>
-        <item>    Калап </item> <item> капелюх</item>
-        <item>    Календарія </item> <item> календар</item>
-        <item>    Кальга </item> <item> кахляна піч</item>
-        <item>    Камазоля </item> <item> безрукавка з хутром з середини</item>
-        <item>    Канта </item> <item> бідон, бідончик</item>
-        <item>    Кантув </item> <item> жбан</item>
-        <item>    Каня </item> <item> пугач</item>
-        <item>    Капура </item> <item> ворота</item>
-        <item>    Катуна </item> <item> солдат</item>
-        <item>    Кац </item> <item> геть (щоб відігнати кота)</item>
-        <item>    Квасна вода </item> <item> мінеральне джерело, мінеральна вода</item>
-        <item>    Кваснина </item> <item> рідина з кислого молока</item>
-        <item>    Кендириця </item> <item> кукурудза</item>
-        <item>    Кендюх </item> <item> (образливе) живіт</item>
-        <item>    Кендиричана мука </item> <item> кукурудзяна мука</item>
-        <item>    Кербач </item> <item> батіг</item>
-        <item>    Керечун </item> <item> домашній хліб, випечений спеціально для Різдва.</item>
-        <item>    Керт </item> <item> сад, город</item>
-        <item>    Кертиця </item> <item> кріт</item>
-        <item>    Кестимен </item> <item> платок</item>
-        <item>    Кефа </item> <item> щітка</item>
-        <item>    Кивати </item> <item> торкатись</item>
-        <item>    Кидь </item> <item> якщо</item>
-        <item>    Киптаки </item> <item> незграбні руки</item>
-        <item>    Китички </item> <item> китиці</item>
-        <item>    Кицькати </item> <item> лоскотати</item>
-        <item>    Кікля </item> <item> мундир, кітель</item>
-        <item>    Кильо </item> <item> скільки</item>
-        <item>    Кіть </item> <item> якщо</item>
-        <item>    Кланцавка </item> <item> пристрій для очистки лісових горіхів</item>
-        <item>    Кланцавки </item> <item> великі зуби (образливе)</item>
-        <item>    Клебан </item> <item> капелюх</item>
-        <item>    Клепач </item> <item> молоток</item>
-        <item>    Клийбас </item> <item> олівець, крейда</item>
-        <item>    Клинець </item> <item> цвях</item>
-        <item>    Клипач </item> <item> молоток</item>
-        <item>    Кліщі </item> <item> обценьки</item>
-        <item>    Ко </item> <item> хто</item>
-        <item>    Кобат </item> <item> пальто</item>
-        <item>    Коби </item> <item> якби</item>
-        <item>    Ковдош </item> <item> жебрак - каліка</item>
-        <item>    Когут </item> <item> півень</item>
-        <item>    Когутки </item> <item> сережки</item>
-        <item>    Команиця </item> <item> конюшина</item>
-        <item>    Колобаня </item> <item> водойма</item>
-        <item>    Конарь </item> <item> гілка, галузка</item>
-        <item>    Копач </item> <item> різка</item>
-        <item>    Копачка </item> <item> мотика</item>
-        <item>    Копкати </item> <item> копати , бити щось або когось</item>
-        <item>    Коргаз </item> <item> лікарня</item>
-        <item>    Кордупиль </item> <item>(образливе) маленький чоловік</item>
-        <item>    Коропаня </item> <item> ропуха</item>
-        <item>    Корчолі </item> <item> ковзани</item>
-        <item>    Коцур </item> <item> кіт</item>
-        <item>    Кочоня </item> <item> холодець</item>
-        <item>    Крачун </item> <item> Різдво Христове</item>
-        <item>    Креденц </item> <item> сервант, буфет</item>
-        <item>    Кресаня </item> <item> капелюх</item>
-        <item>    Криж </item> <item> хрест</item>
-        <item>    Кромплі </item> <item> картопля</item>
-        <item>    Кросна </item> <item> ткацький верстат</item>
-        <item>    Крумпля </item> <item> картопля</item>
-        <item>    Кунтати </item> <item> повільно робити</item>
-        <item>    Купчити </item> <item> купувати</item>
-        <item>    Кутач </item> <item> залізний прут для помішування вугілля у печі</item>
-        <item>    Куферт </item> <item> валіза</item>
-        <item>    Куцькати </item> <item> нацьковувати собак</item>
-        <item>    Килавий </item> <item> прірваний</item>
-        <item>    Лаба </item> <item> нога</item>
-        <item>    Лабощатко </item> <item> каструля з ручкою</item>
-        <item>    Лавор </item> <item> тазик</item>
-        <item>    Ладичка </item> <item> ящик, коробка</item>
-        <item>    Лазиво </item> <item> драбина</item>
-        <item>    Лазити </item> <item> ходити куди не треба</item>
-        <item>    Лайбик </item> <item> піджак</item>
-        <item>    Лампаш </item> <item> ліхтар</item>
-        <item>    Ланцок </item> <item> ланцюг</item>
-        <item>    Ланц </item> <item> ланцюг</item>
-        <item>    Лапати </item> <item> ловити</item>
-        <item>    Лапкати </item> <item> ходити куди не можна, наробити слідів</item>
-        <item>    Лата </item> <item> штахетка з огорожі, дошка</item>
-        <item>    Леквар </item> <item> джем, повидло</item>
-        <item>    Лем </item> <item> лиш, тільки</item>
-        <item>    Ленґарь </item> <item> легінь, парубок</item>
-        <item>    Литрик </item> <item> фонарик</item>
-        <item>    Лобда </item> <item> м\'яч</item>
-        <item>    Ломозіти </item> <item> шуміти, тарахтіти</item>
-        <item>    Лопатки </item> <item> 1)стручки фасолі; 2) звичаєва традиція при небіжчику</item>
-        <item>    Лускати </item> <item> 1)гримати; 2)лузати</item>
-        <item>    Лузник </item> <item> чагарник</item>
-        <item>    Льоґати </item> <item> пити</item>
-        <item>    Майся </item> <item> бувай</item>
-        <item>    Марга </item> <item> велика рогата худоба</item>
-        <item>    Мацур </item> <item> кіт</item>
-        <item>    Мачка </item> <item> кішка</item>
-        <item>    Машінгевер </item> <item> кулемет</item>
-        <item>    Машлик </item> <item> краватка</item>
-        <item>    Ментувка </item> <item> карета швидкої допомоги</item>
-        <item>    Метати </item> <item> кидати</item>
-        <item>    Ми </item> <item> мені</item>
-        <item>    Мінька </item> <item> котик</item>
-        <item>    Міст </item> <item> підлога</item>
-        <item>    Много </item> <item> багато</item>
-        <item>    Мняцкати </item> <item> трощити, здавлювати</item>
-        <item>    Монисто </item> <item> намисто</item>
-        <item>    Мотика </item> <item> сапа</item>
-        <item>    Мотичилно</item> <item> держак для сапи</item>
-        <item>    Мотлошити </item> <item> тріпати</item>
-        <item>    Мотор </item> <item> автомашина</item>
-        <item>    Мочило </item> <item> болото стояче</item>
-        <item>    Мош </item> <item> можна</item>
-        <item>    Мурангля, Мурінділь </item> <item> мурашка</item>
-        <item>    Муст </item> <item> рідкий гній</item>
-        <item>    Нагавиці </item> <item> штани</item>
-        <item>    Надутися </item> <item> розсердитися</item>
-        <item>    Найрадше </item> <item> найліпше, ліпше всього</item>
-        <item>    Налажовати, Наладжувати </item> <item> лаштувати, налагоджувати</item>
-        <item>    Нанашко </item> <item> хрещений батько, батечко</item>
-        <item>    Наохтема </item> <item> навіки</item>
-        <item>    Нач </item> <item> нащо</item>
-        <item>    Небожатко </item> <item> нещаснив людина яку шкодують</item>
-        <item>    Недуйдавий </item> <item> незграбний</item>
-        <item>    Нетрібний </item> <item> бездарний</item>
-        <item>    Нетрімний </item> <item> лінивий</item>
-        <item>    Нефуриче </item> <item> 1) не працює; 2) не підходить до чогось</item>
-        <item>    Ниґда </item> <item> ніколи</item>
-        <item>    Нигда</item> <item> ніколи, нізащо</item>
-        <item>    Низач </item> <item> нізащо</item>
-        <item>    Никус </item> <item> ніскільки</item>
-        <item>    Нико </item> <item> ніхто</item>
-        <item>    Никиваний </item> <item> незайманий</item>
-        <item>    Никус</item> <item>нич, анічогісінько</item>
-        <item>    Новинка </item> <item> газета</item>
-        <item>    Ногавиці </item> <item> штани</item>
-        <item>    Ножиці </item> <item> ножниці</item>
-        <item>    Ньоркати </item> <item> хникати</item>
-        <item>    Няріка </item> <item> літня кухня</item>
-        <item>    Облак </item> <item> вікно</item>
-        <item>    Обращик </item> <item> фотографія, малюнок</item>
-        <item>    Олай </item> <item> олія</item>
-        <item>    Онанджити </item> <item> щось чинити (робити)</item>
-        <item>    Орвош </item> <item> лікар</item>
-        <item>    Орвошаги </item> <item> ліки</item>
-        <item>    Осторва </item> <item> стовбур з зубцями для сіна</item>
-        <item>    Отпуст </item> <item> храмове свято</item>
-        <item>    Оща </item> <item> вафлі</item>
-        <item>    Ощиплята </item> <item> прісний хліб, печений на вогні</item>
-        <item>    Паздіря </item> <item> друзки</item>
-        <item>    Пак </item> <item> потім, після</item>
-        <item>    Паланки </item> <item> огорожа, частокіл, штахетник</item>
-        <item>    Палинка </item> <item> горілка</item>
-        <item>    Пандлик </item> <item> стрічка</item>
-        <item>    Паплан </item> <item> ватне одіяло</item>
-        <item>    Паприга </item> <item> перець</item>
-        <item>    Парадичка </item> <item> помідор</item>
-        <item>    Параплийка </item> <item> парасолька</item>
-        <item>    Пасo(у)ля </item> <item> квасоля</item>
-        <item>    Пацкан </item> <item> пацюк, щур</item>
-        <item>    Паця </item> <item> порося</item>
-        <item>    Пеливня </item> <item> стодола</item>
-        <item>    Пес </item> <item> собака</item>
-        <item>    Перебисяцьки </item> <item> ноша, перекинута через плече</item>
-        <item>    Перина </item> <item> пухове одіяло</item>
-        <item>    Печунки </item> <item> нирки</item>
-        <item>    Писок </item> <item> морда, рот</item>
-        <item>    Письций </item> <item> собачий</item>
-        <item>    Пиняво </item> <item> повільно</item>
-        <item>    Пищалка </item> <item> сопілка</item>
-        <item>    Пі(и)вниця </item> <item> погріб</item>
-        <item>    Підоймати </item> <item> піднімати</item>
-        <item>    Під </item> <item> горище</item>
-        <item>    Пікниця </item> <item> домашня ковбаса</item>
-        <item>    Пілка </item> <item> частина одягу - передник</item>
-        <item>    Пінджурь </item> <item> пуголовок</item>
-        <item>    Піпка </item> <item> люлька</item>
-        <item>    Піштайка </item> <item> вузька доріжка</item>
-        <item>    Пластівниця </item> <item> зібране сіно</item>
-        <item>    Плат </item> <item> великий платок</item>
-        <item>    Платина </item> <item> хустка</item>
-        <item>    Плахта</item> <item> 1) простиня; 2) покривало</item>
-        <item>    Плафон </item> <item> стеля</item>
-        <item>    Повала </item> <item> стеля</item>
-        <item>    Повісти </item> <item> сказати</item>
-        <item>    Подобенка </item> <item> фотографія</item>
-        <item>    Позір </item> <item> погляд</item>
-        <item>    Погар </item> <item> склянка</item>
-        <item>    Пой </item> <item> ідімо, ходім</item>
-        <item>    Покровець </item> <item> доріжка</item>
-        <item>    Полінчата </item> <item> дрова</item>
-        <item>    Пондьол </item> <item> низ юбки</item>
-        <item>    Пондьора </item> <item> халат</item>
-        <item>    Поприга </item> <item> перець</item>
-        <item>    Порайбати </item> <item> випрати</item>
-        <item>    Потак </item> <item> пристрій для змотування ниток</item>
-        <item>    Потік </item> <item> джерело</item>
-        <item>    Потятко </item> <item> пташка</item>
-        <item>    Почливий </item> <item> шанований, поважний</item>
-        <item>    Пропіці </item> <item> у весільній церемонії група гостей, що везе посаг</item>
-        <item>    Прут </item> <item> різка</item>
-        <item>    Пструг </item> <item> форель</item>
-        <item>    Пулька </item> <item> індичка</item>
-        <item>    Путь </item> <item> дорога</item>
-        <item>    Пуцош </item> <item> поганий маленький хлопчик</item>
-        <item>    Райбати </item> <item> прати</item>
-        <item>    Регімент </item> <item> полк</item>
-        <item>    Регонітися </item> <item> голосно сміятися</item>
-        <item>    Рекаме </item> <item> мягкий диван, що розкладається</item>
-        <item>    Реклик </item> <item> піджак</item>
-        <item>    Ринка </item> <item> триножкик - кастрюля</item>
-        <item>    Ринта</item> <item> бруд</item>
-        <item>    Ринтавий </item> <item> брудний</item>
-        <item>    Ритьков </item> <item> редиска</item>
-        <item>    Ритязі </item> <item> замки</item>
-        <item>    Рихтувати </item> <item> готувати</item>
-        <item>    Ричати </item> <item> плакати, кричати</item>
-        <item>    Рінча </item> <item> рінь, гравій</item>
-        <item>    Рітя </item> <item> задниця</item>
-        <item>    Ріш</item> <item>каша - рис</item>
-        <item>    Ройти </item> <item> бахрома</item>
-        <item>    Рубатя </item> <item> одяг</item>
-        <item>    Ружа </item> <item> 1) квітка; 2) хвороба</item>
-        <item>    Ружовий </item> <item> розовий</item>
-        <item>    Рупа </item> <item> землянка</item>
-        <item>    Рула попердула </item> <item> вихлопна труба</item>
-        <item>    Ручник </item> <item> рушник</item>
-        <item>    Рянда </item> <item> ганчірка</item>
-        <item>    Сакастув </item> <item> дерев\'яна ложка</item>
-        <item>    Санувати </item> <item> шкодувати, жаліти</item>
-        <item>    Сахтіти </item> <item> важко дихати</item>
-        <item>    Свербигузка </item> <item> шипшина</item>
-        <item>    Сегінь </item> <item> бідолаха</item>
-        <item>    Серинча </item> <item> щастя</item>
-        <item>    Силгамошний </item> <item> несерйозний, вітрогон</item>
-        <item>    Скарінний </item> <item> бридкий</item>
-        <item>    Склеп </item> <item> крамниця</item>
-        <item>    Скура </item> <item> шкура</item>
-        <item>    Слимуш </item> <item> слимак</item>
-        <item>    Сокачка </item> <item> кухарка</item>
-        <item>    Сокотити </item> <item> берегти, охороняти</item>
-        <item>    Солонина </item> <item> сало</item>
-        <item>    Сомар </item> <item> дурак</item>
-        <item>    Сохи </item> <item> колиска</item>
-        <item>    Спізнавати </item> <item> впізнавати</item>
-        <item>    Стан </item> <item> намет</item>
-        <item>    Струг </item> <item> форель</item>
-        <item>    Суканиця </item> <item> закарпатська страва</item>
-        <item>    Сукати </item> <item> терти</item>
-        <item>    Сукирвиця </item> <item> гнійна рідина із рани</item>
-        <item>    Сулак </item> <item> стовп</item>
-        <item>    Сунюг </item> <item> комар, москіт</item>
-        <item>    Талір </item> <item> тарілка</item>
-        <item>    Талпа </item> <item> підошва</item>
-        <item>    Тапловка </item> <item> гаманець</item>
-        <item>    Тапша </item> <item> противень</item>
-        <item>    Тварь </item> <item> обличчя</item>
-        <item>    Тенгериця </item> <item> кукурудза</item>
-        <item>    Тепша </item> <item> противень</item>
-        <item>    Тийка </item> <item> зошит</item>
-        <item>    Тинитів, Тимітюв </item> <item> кладовище</item>
-        <item>    Тинта </item> <item> чорнило</item>
-        <item>    Тинтовий </item> <item> фіолетовий</item>
-        <item>    Тичка </item> <item> палиця із ліщини або смереки</item>
-        <item>    Топанки </item> <item> черевики</item>
-        <item>    Трафити </item> <item> втрапити, влучити</item>
-        <item>    Туйка </item> <item> тут</item>
-        <item>    Туйкива </item> <item> отут</item>
-        <item>    Тя </item> <item> тебе</item>
-        <item>    Уйко </item> <item> мамин брат</item>
-        <item>    Урватися </item> <item> надіраватися; зірватися з ланцюга</item>
-        <item>    Учмелити </item> <item> прибити (до втрати свідомості)</item>
-        <item>    Ушаліти </item> <item> здуріти</item>
-        <item>    Фавда </item> <item> складка, волан</item>
-        <item>    Файно, файен </item> <item> гарно, добре</item>
-        <item>    Файта </item> <item> порода, сорт, рід, родина</item>
-        <item>    Фалка </item> <item> скошене сіно</item>
-        <item>    Фана </item> <item> прапор</item>
-        <item>    Фасоля </item> <item> квасоля</item>
-        <item>    Фаті(ю)в </item> <item> пацан, хлоп\'я</item>
-        <item>    Фачлик </item> <item> бинт</item>
-        <item>    Фест </item> <item> добре</item>
-        <item>    Фивник </item> <item> шеф, керівник</item>
-        <item>    Фийк </item> <item> гальмо</item>
-        <item>    Филизівка </item> <item> рідина, яка виділяється при виготовлені вершків з коров\'ячого молока</item>
-        <item>    Фіглі </item> <item> жарти</item>
-        <item>    Фіглярний </item> <item> той, що розповідає жарти</item>
-        <item>    Фійовка </item> <item> шухляда</item>
-        <item>    Фінджа </item> <item> чашка, кухоль</item>
-        <item>    Фінгал </item> <item> синяк під оком</item>
-        <item>    Фірганки </item> <item> занавіски</item>
-        <item>    Фіркати </item> <item> чиркати</item>
-        <item>    Фіцкати </item> <item> копати</item>
-        <item>    Фляцкати </item> <item> 1) розбризкувати;</item>
-        <item>    Фолвід </item> <item> вишите панно</item>
-        <item>    Фрас </item> <item> чортівщина, чорт - зна що</item>
-        <item>    Фриштик </item> <item> сніданок</item>
-        <item>    Фурґіта </item> <item> дверна ручка</item>
-        <item>    Фурик </item> <item> тачка</item>
-        <item>    Фурт </item> <item> постійно</item>
-        <item>	Хлопик </item> <item> чоловічок	</item>
-        <item>    Цабати </item> <item> пересуватися рачки</item>
-        <item>    Церузка </item> <item> олівець</item>
-        <item>    Цімбор, цімбора </item> <item> приятель</item>
-        <item>    Цімент </item> <item> бетонна долівка; цемент</item>
-        <item>    Цугсфірер </item> <item> командир чети, четар</item>
-        <item>    Цурош </item> <item> обідранець, жебрак</item>
-        <item>    Чижма </item> <item> чобіт</item>
-        <item>    Чіга-біга</item> <item>равлик</item>
-        <item>    Чікув </item> <item> лоша</item>
-        <item>    Шаломіня </item> <item> листя від очищеної кукурузи</item>
-        <item>    Шаркань </item> <item> дракон</item>
-        <item>    Шатя </item> <item> одяг</item>
-        <item>    Шваб </item> <item> тарган, пруссак</item>
-        <item>    Швакати </item> <item> бити, ударяти</item>
-        <item>    Шилиякий </item> <item> усілякий</item>
-        <item>    Шіковно </item> <item> спритно</item>
-        <item>    Шітемені </item> <item> печиво, тістечка</item>
-        <item>    Шмарити </item> <item> шпурнути</item>
-        <item>    Шовдарь </item> <item> стегно; шинка</item>
-        <item>    Шопа </item> <item> клуня, сарай, навіс</item>
-        <item>    Шор </item> <item> черга, ряд</item>
-        <item>    Шпайз </item> <item> комора</item>
-        <item>    Шпарга </item> <item> шнур</item>
-        <item>    Штрімфля </item> <item> панчоха</item>
+
+    <string-array name="pod">
+        <item>БабАйка </item> <item> весло (невеличке товсте весло, яким гребуть.)</item>
+        <item>БабЕра </item> <item> баба; вживається на означення негативного ставлення до жінки.</item>
+        <item>БабкИ </item> <item> бички (риба) або подорожник</item>
+        <item>БагА </item> <item> виноградник</item>
+        <item>БАдіка (молд.) </item> <item> старший брат</item>
+        <item>БалАбушка </item> <item> кукурудзяний пряничок</item>
+        <item>БаламУт </item> <item> скумбрія</item>
+        <item>БджолИца </item> <item> кропива</item>
+        <item>БЕнчик </item> <item> глечик</item>
+        <item>БЕтаг </item> <item> сміття</item>
+        <item>БИна, бИнка </item> <item> корова</item>
+        <item>БлЕйка </item> <item> чутка, неправдоподбна розмова, брехня</item>
+        <item>БроскАй </item> <item> жаба</item>
+        <item>БрундУк </item> <item> канат, яким прив\'язують човен</item>
+        <item>Брунт </item> <item> коштовне велике намисто</item>
+        <item>БУба </item> <item> болячка, нарив</item>
+        <item>Буц</item> <item>товстун, гладка людина</item>
+        <item>БуцкувАтий</item> <item>товстий, жирний, ситий</item>
+        <item>ВакОл </item> <item> загорода, обора</item>
+        <item>ВАрка</item> <item>голова риби</item>
+        <item>ВеирЕйка </item> <item> велика корзина, кошик</item>
+        <item>ВертІжник </item> <item> гвинт</item>
+        <item>ВеисЕлиця </item> <item> веселка</item>
+        <item>ВонітувАти  </item> <item> блювати</item>
+        <item>ВуйАнка </item> <item> тітка, батькового чи материного брата</item>
+        <item>ГарАм </item> <item> скотина, худоба</item>
+        <item>ГЕмба </item> <item> губа</item>
+        <item>ГИжки </item> <item> холодець</item>
+        <item>ГрАдина </item> <item> город (де вирощують овочі)</item>
+        <item>ГраничЕр </item> <item> прикордонник</item>
+        <item>Гудз </item> <item> вузол</item>
+        <item>ГУнька </item> <item> плащ, дощовик</item>
+        <item>ГабзувАти </item> <item> ганьбити, соромити когось</item>
+        <item>ГолАн </item> <item> бідняк</item>
+        <item>ДерУн </item> <item> окунь</item>
+        <item>ДойбАч, дОйбало </item> <item> дятел</item>
+        <item>ЖидОчок </item> <item> таракан</item>
+        <item>ЗавАлки </item> <item> ангіна</item>
+        <item>ЗалУп </item> <item> лопата</item>
+        <item>Ізвор </item> <item> джерело</item>
+        <item>КалабАтина </item> <item> калюжа</item>
+        <item>КамЕша </item> <item> сорочка</item>
+        <item>Карики </item> <item> грядки на городі</item>
+        <item>Катальня </item> <item> гойдалка</item>
+        <item>Кац! </item> <item> вигук, яким виганяють котів</item>
+        <item>Кика </item> <item> м’ясо</item>
+        <item>Колотуха </item> <item> ряжанка</item>
+        <item>Конопельник </item> <item> горобець</item>
+        <item>КОпла </item> <item> (лайливо) погань, сміття, нечисть</item>
+        <item>Коцюба </item> <item> кочерга</item>
+        <item>КукулИчка </item> <item> зозуля</item>
+        <item>КупчАк </item> <item> гвоздика</item>
+        <item>КуркАн </item> <item> індик</item>
+        <item>КуртубЕтка </item> <item> гарбуз</item>
+        <item>Куружій </item> <item> сторож</item>
+        <item>КУчма </item> <item> чоловіча шапка</item>
+        <item>Куця </item> <item> свиня</item>
+        <item>Лада </item> <item> скриня</item>
+        <item>ЛАкітка </item> <item> ласощі</item>
+        <item>ЛЕгавий </item> <item> лінивий</item>
+        <item>ЛЕля </item> <item> старша сестра</item>
+        <item>ЛЕлик </item> <item> кажан</item>
+        <item>ЛИнта </item> <item> сочевиця</item>
+        <item>ЛіліЯк </item> <item> бузок</item>
+        <item>ЛоботрАска </item> <item> гарячка</item>
+        <item>ЛьодИця </item> <item> ожеледь</item>
+        <item>МагАр </item> <item> осел, (іронічно) дурень</item>
+        <item>МацІця </item> <item> морока</item>
+        <item>Мимдитись </item> <item> псуватись</item>
+        <item>Мутиль, мутлик </item> <item> метелик</item>
+        <item>НатлУмитись </item> <item> набігатись, натомитись</item>
+        <item>НахлИсник </item> <item> торба, сумка</item>
+        <item>НачИня </item> <item> посуд</item>
+        <item>НагУт </item> <item> горох</item>
+        <item>НанАшка </item> <item> хрещена мати</item>
+        <item>НанАшко </item> <item> хрещений батько</item>
+        <item>НИцка </item> <item> овечка</item>
+        <item>ОдгОн </item> <item> товстий канат, яким прикрћляють сітки до човна підчас рибальства</item>
+        <item>ОдАйа </item> <item> поляна в лісі</item>
+        <item>ОжечЕда </item> <item> ожеледиця</item>
+        <item>ОкалатАти </item> <item> вимолотити зерно</item>
+        <item>Окол </item> <item> загорода, обора</item>
+        <item>ПавУткало (ПагУткало) </item> <item> сич (пташка)</item>
+        <item>ПавУтнця </item> <item> береза</item>
+        <item>ПАгуба </item> <item> втрата чогось</item>
+        <item>ПанЕра </item> <item> корзина сплетена з верби</item>
+        <item>ПаратАри </item> <item> вузькиій довгий килим</item>
+        <item>ПатрИка </item> <item> великий шматок хлібу</item>
+        <item>ПАц (ПАца) </item> <item> цегла сирець</item>
+        <item>ПацьОрки </item> <item> намистини</item>
+        <item>ПашЕнна </item> <item> яма (у формі глечика, колись в таких зберігали зерно на зиму)</item>
+        <item>ПетУра </item> <item> тонке літнє одіяло</item>
+        <item>ПЕтрати </item> <item> розуміти</item>
+        <item>ПистЕлка </item> <item> фартух</item>
+        <item>ПИски </item> <item> губи</item>
+        <item>ПИнавий </item> <item> повільний</item>
+        <item>Під </item> <item> горище, підстилка з соломи</item>
+        <item>ПідБурок </item> <item> залізний гак з дерев\'яною ручкою (використовується при рибальстві)</item>
+        <item>Підлашчуйка </item> <item> молодий лящ</item>
+        <item>Підплок </item> <item> перепічка</item>
+        <item>ПІдтич </item> <item> тички, стовпи на яких сушать рибальські сіті</item>
+        <item>ПІкна </item> <item> лопата</item>
+        <item>ПіскУн (ПіскУр, ПісШник)</item> <item> бичок, що водиться в Дністровському лимані</item>
+        <item>ПістЕлка </item> <item> фартух</item>
+        <item>ПічурА </item> <item> закуток в печі</item>
+        <item>ПйатирИк </item> <item> дерев\'яні вила</item>
+        <item>ПлажатУра </item> <item> невеликий пиріжок у формі півкола</item>
+        <item>ПлАхта </item> <item> одіяло яким загортають малу дитину</item>
+        <item>Плес </item> <item> затоки Дністра</item>
+        <item>ПливОк </item> <item> поплавок</item>
+        <item>ПобІчка </item> <item> печінка бичка (риби)</item>
+        <item>ПогАнка </item> <item> гадюка</item>
+        <item>Подра (Подрачка) </item> <item> сідало для курей</item>
+        <item>ПодуфАйло </item> <item> самовпевнена людина</item>
+        <item>ПожажихФтися </item> <item> спрага, велика нестача води</item>
+        <item>ПокАл </item> <item> дно Дністровського лиману, переважно болотисте</item>
+        <item>ПолинкИ </item> <item> хризантеми</item>
+        <item>ПолуйарлИк </item> <item> очерет</item>
+        <item>Помпак </item> <item> гвоздика</item>
+        <item>ПомпІти </item> <item> здаватись</item>
+        <item>ПорЄнча </item> <item> спинка ліжка</item>
+        <item>ПотлУмити </item> <item> побити кулаками</item>
+        <item>ПойстакИ </item> <item> валянки</item>
+        <item>ПрежитУри </item> <item> пироги</item>
+        <item>Прес </item> <item> вигук, яким відганяють котів</item>
+        <item>ПрийстИ </item> <item> прийти</item>
+        <item>ПриталІшчитися </item> <item> невчасно прийти</item>
+        <item>ПритвОр </item> <item> двері, вікна</item>
+        <item>ПрИшчіпка </item> <item> латка на взутті</item>
+        <item>ПрогАвина </item> <item> огріх, невелика провина</item>
+        <item>ПрошкувАти </item> <item> іти навпростець (йти прямо)</item>
+        <item>ПудЕлко </item> <item> коробочка, футляр</item>
+        <item>ПузАнка </item> <item> чорна смородина</item>
+        <item>ПузичкИ </item> <item> чурвона смородина</item>
+        <item>ПУлка </item> <item> качка</item>
+        <item>Пунц </item> <item> червоний рак</item>
+        <item>РАфа </item> <item> сито, решето</item>
+        <item>РАшниця </item> <item> сітка, якою ловлять раків</item>
+        <item>РетувАти </item> <item> сваритися</item>
+        <item>РисОрник </item> <item> тачка, тачанка</item>
+        <item>РозвІлка </item> <item> роздоріжжя</item>
+        <item>РОндел (РОндил) </item> <item> сковорідка</item>
+        <item>РоскирдАч </item> <item> безлад, безпорядок</item>
+        <item>РослАк </item> <item> тютюн (вирощений самотужки)</item>
+        <item>РОсул </item> <item> бульйон</item>
+        <item>РудА </item> <item> кров</item>
+        <item>РумОчити </item> <item> пити, випивати (алкоголь)</item>
+        <item>СаламАт </item> <item> вінігрет</item>
+        <item>СамотЕй </item> <item> молодий сом</item>
+        <item>СайгАн </item> <item> отара овець</item>
+        <item>СвирбИвус </item> <item> шипшина </item>
+        <item>СЕберний </item> <item> злий, лютий</item>
+        <item>СередИнка </item> <item> риба сардель</item>
+        <item>СкупЕра </item> <item> дуже скупий</item>
+        <item>СлаковИця </item> <item> погана погода</item>
+        <item>Слуп </item> <item> стовп</item>
+        <item>СмаженИця </item> <item> яєшня</item>
+        <item>СтільнИця </item> <item> кришка стору</item>
+        <item>СтрижаЧок </item> <item> дворічне лоша (маленький коник)</item>
+        <item>СулУйка </item> <item> пішохідна доріжка, стежка</item>
+        <item>ТабУн </item> <item> отара (група свійських тварин)</item>
+        <item>ТаракОнити </item> <item> базікати, розмовляти</item>
+        <item>ТАрбати </item> <item> тягти, шарпати</item>
+        <item>ТріпАчка </item> <item> малярія</item>
+        <item>ТУкан </item> <item> дятел</item>
+        <item>ФакАти </item> <item> погано горіти, диміти</item>
+        <item>ФунтИна </item> <item> колодязь</item>
+        <item>Фута </item> <item> фартух</item>
+        <item>ХИза </item> <item> вогонь</item>
+        <item>ЦибУх </item> <item> мундштук</item>
+        <item>Чара </item> <item> сковорода</item>
+        <item>ЧекамзА </item> <item> окунь</item>
+        <item>ЧертАн </item> <item> малий короп</item>
+        <item>ЧИкалка </item> <item> пастух</item>
+        <item>Чоп </item> <item> молодий судак</item>
+        <item>Чурка </item> <item> онучка</item>
+        <item>ЧучУга </item> <item> молода свиня</item>
+        <item>ШарАн </item> <item> короп</item>
+        <item>ШашоВиця </item> <item> сочевиця</item>
+        <item>ШолупА </item> <item> лушпиття, з соняшникового насіння</item>
+        <item>ШОпа </item> <item> сарай</item>
+        <item>ШпагАтійка </item> <item> самогон</item>
+        <item>ШошОни </item> <item>боти, взуття</item>
+        <item>ШпИрка </item> <item> вискочка</item>
+        <item>ШпиндилИк </item> <item> жаба</item>
+        <item>ШтубЄй </item> <item> вулик</item>
+        <item>Шуги </item> <item>взуття</item>
+        <item>ШчЄрба </item> <item> юшка з риби</item>
+        <item>ШчукулИця </item> <item> маленька шчука</item>
     </string-array>
 
 </resources>

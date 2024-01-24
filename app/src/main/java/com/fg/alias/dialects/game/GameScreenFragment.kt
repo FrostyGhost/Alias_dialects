@@ -1,22 +1,21 @@
 package com.fg.alias.dialects.game
 
-import android.annotation.SuppressLint
-import android.os.Build
 import android.os.Bundle
-import android.os.CountDownTimer
 import android.view.View
 import android.widget.Toast
-import androidx.core.content.res.ResourcesCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import androidx.lifecycle.observe
 import androidx.navigation.fragment.findNavController
 import com.fg.alias.R
 import com.fg.alias.dialects.game.result.ResultDialog
 import com.fg.alias.dialects.game.winer.WinnerDialog
 import com.fg.alias.dialects.utils.AbstractCardStackListener
+import com.fg.alias.dialects.utils.FirebaseLogs
+import com.fg.alias.dialects.utils.FirebaseLogs.ON_GAME_END
 import com.fg.alias.dialects.utils.Team
 import com.fg.alias.dialects.utils.getFormatTime
+import com.google.firebase.analytics.FirebaseAnalytics
+import com.orbitalsonic.sonictimer.SonicCountDownTimer
 import com.yuyakaido.android.cardstackview.CardStackLayoutManager
 import com.yuyakaido.android.cardstackview.Direction
 import com.yuyakaido.android.cardstackview.StackFrom
@@ -34,8 +33,8 @@ class GameScreenFragment : Fragment(R.layout.fragment_main_menu){
     private var isLastCardCorrect = false
     private var isCurrentCardPos = 0
     private var isAdditionalTime = false
-    private var roundTimer: CountDownTimer? = null
-    private var additionalTimer: CountDownTimer? = null
+    private var roundTimer: SonicCountDownTimer? = null
+    private var additionalTimer: SonicCountDownTimer? = null
     private val viewModel: GameStateViewModel? by lazy {
         ViewModelProvider(requireActivity()).get(GameStateViewModel::class.java)
     }
@@ -98,17 +97,20 @@ class GameScreenFragment : Fragment(R.layout.fragment_main_menu){
     private fun checkIsFirstCard(){
         if (isFirstSwipe){
             isFirstSwipe = false
-            additionalTimer?.cancel()
-            roundTimer?.cancel()
-            roundTimer?.start()
+            additionalTimer?.cancelCountDownTimer()
+            setupAdditionalTimer()
+            roundTimer?.cancelCountDownTimer()
+            setupTimer()
+            roundTimer?.startCountDownTimer()
         }
     }
 
     private fun checkIsLastAdditionalWord(){
         if (isAdditionalTime){
             showResults()
-            additionalTimer?.cancel()
+            additionalTimer?.cancelCountDownTimer()
             isAdditionalTime = false
+            tvTimer.text = ""
         }
     }
 
@@ -127,37 +129,37 @@ class GameScreenFragment : Fragment(R.layout.fragment_main_menu){
     }
 
     private fun setupTimer(){
-        roundTimer = object : CountDownTimer(
-            roundTime,
-            TimeUnit.SECONDS.toMillis(1)){
-            @SuppressLint("SetTextI18n")
-            override fun onTick(millisUntilFinished: Long) {
+        roundTimer = object : SonicCountDownTimer(
+            roundTime, TimeUnit.SECONDS.toMillis(1))
+        {
+            override fun onTimerTick(millisUntilFinished: Long) {
                 if (isAdded){
                     tvTimer.text = getFormatTime(millisUntilFinished)
                 }
             }
-            override fun onFinish() {
+
+            override fun onTimerFinish() {
                 if (isAdded && viewModel?.isAdditionalTimeForLastWork != true){
                     showResults()
                 }else{
                     isAdditionalTime = true
-                    additionalTimer?.cancel()
-                    additionalTimer?.start()
+                    additionalTimer?.cancelCountDownTimer()
+                    additionalTimer?.startCountDownTimer()
                 }
             }
-    } }
+        } }
 
     private fun setupAdditionalTimer(){
-        additionalTimer = object : CountDownTimer(
-            1*60*1000L,
-            TimeUnit.SECONDS.toMillis(1)){
-            @SuppressLint("SetTextI18n")
-            override fun onTick(millisUntilFinished: Long) {
+        additionalTimer = object : SonicCountDownTimer(
+            1*60*1000L, TimeUnit.SECONDS.toMillis(1))
+        {
+            override fun onTimerTick(millisUntilFinished: Long) {
                 if (isAdded){
                     tvTimer.text = getFormatTime(millisUntilFinished)
                 }
             }
-            override fun onFinish() {
+
+            override fun onTimerFinish() {
                 if (isAdded){
                     showResults()
                 }
@@ -204,6 +206,8 @@ class GameScreenFragment : Fragment(R.layout.fragment_main_menu){
             }
         })
         dialog.show(childFragmentManager, dialog.tag)
+
+        FirebaseLogs.customEvent(FirebaseAnalytics.Event.LEVEL_END, ON_GAME_END)
     }
 
     private fun setupCardStackView() {
@@ -239,6 +243,32 @@ class GameScreenFragment : Fragment(R.layout.fragment_main_menu){
         tvScore.text = score.toString()
         tvScore.text = score.toString()
         adapter.setWordList(viewModel?.getWordsList()?: ArrayList())
+    }
+
+    override fun onStop() {
+        println("QQ onStop $")
+        roundTimer?.pauseCountDownTimer()
+        additionalTimer?.pauseCountDownTimer()
+        super.onStop()
+    }
+
+    override fun onPause() {
+        println("QQ onPause $")
+        roundTimer?.pauseCountDownTimer()
+        additionalTimer?.pauseCountDownTimer()
+        super.onPause()
+    }
+
+    override fun onResume() {
+        println("QQ onResume $")
+        if (!isFirstSwipe){
+            if (isAdditionalTime){
+                additionalTimer?.resumeCountDownTimer()
+            }else{
+                roundTimer?.resumeCountDownTimer()
+            }
+        }
+        super.onResume()
     }
 
 }

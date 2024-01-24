@@ -13,7 +13,7 @@ class GameStateViewModel : ViewModel() {
     private var usedWordsList = ArrayList<Word>()
     private var tempUsedWordsList = ArrayList<Word>()
     private var teamsList = ArrayList<Team>()
-    private var currentTeamPosition = 0
+    private var currentTeamPosition: Int = 0
     private var roundTime = TimeUnit.MINUTES.toMillis(1)
     private var roundMaxScore = 100
     var currentTeamName = MutableLiveData<String>()
@@ -50,7 +50,7 @@ class GameStateViewModel : ViewModel() {
         for (team in teamNameStringList){
             teamsList.add(Team(team, 0, 0))
         }
-        currentTeamName.postValue(teamsList.first().name)
+        currentTeamName.postValue(teamsList[currentTeamPosition].name)
     }
 
     fun setWordsList(list : ArrayList<Word>){
@@ -87,14 +87,11 @@ class GameStateViewModel : ViewModel() {
         team.score+=score
         team.round+=1
 
-        when(currentTeamPosition){
-            teamsList.size-1 ->{
-                currentTeamPosition=0
-                return checkWinner()
-            }
-            else ->{
-                currentTeamPosition+=1
-            }
+        currentTeamPosition += 1
+        if (currentTeamPosition >=teamsList.size){
+            currentTeamPosition = 0
+            currentTeamName.postValue(teamsList[currentTeamPosition].name)
+            return checkWinner()
         }
         currentTeamName.postValue(teamsList[currentTeamPosition].name)
         return null
