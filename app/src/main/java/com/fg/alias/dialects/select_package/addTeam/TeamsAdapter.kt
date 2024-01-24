@@ -29,6 +29,7 @@ class TeamsAdapter(
     override fun onBindViewHolder(holder: TeamViewHolder, position: Int) {
         holder.tvTeamName.text = names[position]
         if (isRemoveIconVisible){
+            holder.tvClose.visibility = View.VISIBLE
             holder.tvClose.setOnClickListener {
                 names.removeAt(position)
                 notifyDataSetChanged()

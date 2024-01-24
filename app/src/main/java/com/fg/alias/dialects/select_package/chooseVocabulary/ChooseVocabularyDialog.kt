@@ -34,19 +34,13 @@ class ChooseVocabularyDialog(
     private val selectedVocabularyList = ArrayList<Vocabulary>()
 
     private fun updateSelectedVocabulary(vocabulary: Vocabulary) {
-
-        val firebaseAnalytics = Firebase.analytics
-        val bundle = Bundle()
-        bundle.putString("fasdf", "fasd")
-        firebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_ITEM, bundle)
-
         FirebaseLogs.customEvent("customLogs", "selected = ${vocabulary.localise}")
-
         FirebaseLogs.customEvent(FirebaseAnalytics.Event.SELECT_ITEM, "selected = ${vocabulary.localise}")
 
         if (vocabulary == Vocabulary.ALL){
             selectedVocabularyList.clear()
             selectedVocabularyList.add(vocabulary)
+            dismiss()
         }else{
             if (selectedVocabularyList.contains(vocabulary)){
                 selectedVocabularyList.remove(vocabulary)

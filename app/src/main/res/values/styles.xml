@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BrandedCheckBox" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorAccent">@color/white</item>
+        <item name="colorControlNormal">@color/title_text</item>
+    </style>
+
+    <style name="ResultCheckBox" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorAccent">@color/color_accent</item>
+    </style>
+
+</resources>

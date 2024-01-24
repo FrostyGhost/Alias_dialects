@@ -34,7 +34,7 @@ class CardStackAdapter(
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = wordsList[position]
-        holder.title.text = item.word
+        holder.title.text = item.word.replaceFirstChar { it.uppercaseChar() }
         holder.description.text = item.description
         holder.region.text = item.region
 //        holder.imageBg.setBackgroundColor(Colord[Random.nextInt(0, Colord.size-1)])

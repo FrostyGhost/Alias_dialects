@@ -4,9 +4,12 @@ import android.os.Bundle
 import android.view.View
 import android.view.ViewGroup
 import android.view.WindowManager
+import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.DialogFragment
 import com.fg.alias.R
+import kotlinx.android.synthetic.main.dialog_add_team.etAddCommandName
+import kotlinx.android.synthetic.main.dialog_add_team.imgCheck
 import kotlinx.android.synthetic.main.fragment_select_package.*
 
 
@@ -29,6 +32,18 @@ class AddTeamDialog(
         super.onViewCreated(view, savedInstanceState)
 
         setupAdapter()
+        setupAddNewUser()
+    }
+
+    private fun setupAddNewUser(){
+        imgCheck.setOnClickListener {
+            if (!etAddCommandName.text.isNullOrBlank())  {
+                listener.onNewTeamAdded(etAddCommandName.text.toString())
+                dismiss()
+            } else{
+                Toast.makeText(requireContext(), "Введіть назву команди", Toast.LENGTH_SHORT).show()
+            }
+        }
     }
 
     private fun setupAdapter() {

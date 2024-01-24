@@ -49,8 +49,8 @@
         android:layout_height="48dp"
         android:text="Відкрити меню"
         android:gravity="center"
-        android:textColor="@color/white"
-        android:background="@drawable/ic_bg"
+        android:textColor="@color/title_text"
+        android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

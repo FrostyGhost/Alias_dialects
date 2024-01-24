@@ -76,11 +76,11 @@ class SelectPackageFragment : Fragment(R.layout.fragment_select_package){
             viewModel.setTeams(adapter.getTeamsList())
         }else{
             Toast.makeText(requireContext(),
-                "для гри вам потрібно мінімум дві команди",
+                "Для гри вам потрібно мінімум дві команди",
                 Toast.LENGTH_SHORT).show()
             return
         }
-        println("QQ start game ${adapter.getTeamsList()} \n ${tvVocabularyName.text}")
+
         FirebaseLogs.customEvent(FirebaseAnalytics.Event.LEVEL_START, "" +
                 "${adapter.getTeamsList()} \n" +
                 " ${tvVocabularyName.text} ")
@@ -103,7 +103,7 @@ class SelectPackageFragment : Fragment(R.layout.fragment_select_package){
                 }
 
                 if (selectedVocabularies.isEmpty() || (selectedVocabularies == "Обрані словники:")){
-                    tvVocabularyName.text = "Оберіть словник"
+                    tvVocabularyName.text = "Обрані словники: Всі"
                 }else{
                     tvVocabularyName.text = selectedVocabularies
                             .replace("\n", ", ")
@@ -125,7 +125,9 @@ class SelectPackageFragment : Fragment(R.layout.fragment_select_package){
 
     private fun setWordsCount(isPlus: Boolean){
         if (isPlus){
-            wordsTotalCount+=10
+            if (wordsTotalCount < 250){
+                wordsTotalCount+=10
+            }
         }else{
             if (wordsTotalCount > 10){
                 wordsTotalCount-=10
@@ -136,7 +138,7 @@ class SelectPackageFragment : Fragment(R.layout.fragment_select_package){
 
     private fun setTotalTime(isPlus: Boolean){
         if (isPlus){
-        if (timeTotal > FIVE_MIN){
+            if (timeTotal < FIVE_MIN){
                 timeTotal+= TEN_SEC
             }
         }else{

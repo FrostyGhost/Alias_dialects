@@ -8,6 +8,11 @@ fun getFormatTime(millis: Long): String {
     return String.format("%02d:%02d", minutes, seconds)
 }
 
+data class VocabularyItem(
+    val voc: Vocabulary,
+    var isSelected: Boolean = false
+)
+
 enum class Vocabulary(val localise: String) {
     ALL("Всі"),
     GAL("Галицький"),
@@ -49,14 +54,14 @@ fun getVocabularyCount(voc: Vocabulary): String {
     }
 }
 
-fun getAllVocabularies(): ArrayList<Vocabulary> {
-    val vocabularyList = ArrayList<Vocabulary>()
-    vocabularyList.add(Vocabulary.ALL)
-    vocabularyList.add(Vocabulary.GAL)
-    vocabularyList.add(Vocabulary.LVIV)
-    vocabularyList.add(Vocabulary.ZAC)
-    vocabularyList.add(Vocabulary.POD)
-    vocabularyList.add(Vocabulary.ODESA)
+fun getAllVocabularies(): ArrayList<VocabularyItem> {
+    val vocabularyList = ArrayList<VocabularyItem>()
+    vocabularyList.add(VocabularyItem(Vocabulary.ALL))
+    vocabularyList.add(VocabularyItem(Vocabulary.GAL))
+    vocabularyList.add(VocabularyItem(Vocabulary.LVIV))
+    vocabularyList.add(VocabularyItem(Vocabulary.ZAC))
+    vocabularyList.add(VocabularyItem(Vocabulary.POD))
+    vocabularyList.add(VocabularyItem(Vocabulary.ODESA))
     return vocabularyList
 }
 
