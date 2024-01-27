@@ -1,8 +1,11 @@
 package com.fg.alias.dialects.game
 
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.view.View
 import android.widget.Toast
+import androidx.activity.OnBackPressedCallback
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
@@ -19,7 +22,10 @@ import com.orbitalsonic.sonictimer.SonicCountDownTimer
 import com.yuyakaido.android.cardstackview.CardStackLayoutManager
 import com.yuyakaido.android.cardstackview.Direction
 import com.yuyakaido.android.cardstackview.StackFrom
-import kotlinx.android.synthetic.main.fragment_main_menu.*
+import kotlinx.android.synthetic.main.fragment_main_menu.cardStackView
+import kotlinx.android.synthetic.main.fragment_main_menu.tvScore
+import kotlinx.android.synthetic.main.fragment_main_menu.tvTeamName
+import kotlinx.android.synthetic.main.fragment_main_menu.tvTimer
 import java.util.concurrent.TimeUnit
 
 
@@ -33,6 +39,7 @@ class GameScreenFragment : Fragment(R.layout.fragment_main_menu){
     private var isLastCardCorrect = false
     private var isCurrentCardPos = 0
     private var isAdditionalTime = false
+    private var isExitClicked = false
     private var roundTimer: SonicCountDownTimer? = null
     private var additionalTimer: SonicCountDownTimer? = null
     private val viewModel: GameStateViewModel? by lazy {
@@ -46,6 +53,25 @@ class GameScreenFragment : Fragment(R.layout.fragment_main_menu){
         setupCardStackView()
         setupClickListeners()
         setupObserver()
+        handleBackBtnClick()
+    }
+
+    private fun handleBackBtnClick(){
+        requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner,
+            object : OnBackPressedCallback(true) {
+                override fun handleOnBackPressed() {
+                    if (isExitClicked){
+                        findNavController().popBackStack()
+                    }else{
+                        Toast.makeText(requireContext(), "Натисніть ще раз, щоб вийти", Toast.LENGTH_SHORT).show()
+                    }
+                    isExitClicked = true
+                    Handler(Looper.getMainLooper()).postDelayed({
+                        isExitClicked = false
+                    }, 2000)
+                }
+            }
+        )
     }
 
     private fun setupBaseValues(){
@@ -246,21 +272,18 @@ class GameScreenFragment : Fragment(R.layout.fragment_main_menu){
     }
 
     override fun onStop() {
-        println("QQ onStop $")
         roundTimer?.pauseCountDownTimer()
         additionalTimer?.pauseCountDownTimer()
         super.onStop()
     }
 
     override fun onPause() {
-        println("QQ onPause $")
         roundTimer?.pauseCountDownTimer()
         additionalTimer?.pauseCountDownTimer()
         super.onPause()
     }
 
     override fun onResume() {
-        println("QQ onResume $")
         if (!isFirstSwipe){
             if (isAdditionalTime){
                 additionalTimer?.resumeCountDownTimer()
