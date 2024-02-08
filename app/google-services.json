@@ -4,7 +4,36 @@
     "project_id": "alias-dialects",
     "storage_bucket": "alias-dialects.appspot.com"
   },
-
-
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:78462305058:android:ebb925dd69423469081b7b",
+        "android_client_info": {
+          "package_name": "com.fg.alias.dialects"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "78462305058-uamppnvf71kr1694c7btlp59gl04lgc6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9j0CTI82neYrs_yB1nQhw8gjyaxhD674"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "78462305058-uamppnvf71kr1694c7btlp59gl04lgc6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
   "configuration_version": "1"
 }

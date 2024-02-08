@@ -12,7 +12,7 @@ android {
     buildToolsVersion "30.0.2"
 
     defaultConfig {
-            applicationId "com.fg.alias.dialects"
+        applicationId "com.fg.alias.dialects"
         minSdkVersion 22
         targetSdkVersion 33
         versionCode 1

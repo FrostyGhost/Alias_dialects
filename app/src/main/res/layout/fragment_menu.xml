@@ -5,8 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:focusable="false"
-    android:focusableInTouchMode="true"
-    android:background="@drawable/ic_bg">
+    android:background="@color/white"
+    android:focusableInTouchMode="true">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.8"
+        android:background="@drawable/ic_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
@@ -37,17 +47,14 @@
         android:id="@+id/tvNewGame"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="16dp"
         android:background="@color/white"
+        android:fontFamily="@font/roboto_regular"
         android:gravity="center"
         android:paddingVertical="16dp"
         android:text="@string/new_game"
+        android:textColor="@color/regular_text"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:fontFamily="@font/roboto_regular"
-        android:textColor="@color/regular_text"
         app:layout_constraintBottom_toTopOf="@+id/tvRules"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -94,4 +101,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_icon" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
